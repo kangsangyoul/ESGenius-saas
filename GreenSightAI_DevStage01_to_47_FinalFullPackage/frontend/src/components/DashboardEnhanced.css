@@ -1,0 +1,48 @@
+.ui-dashboard {
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.ui-dashboard h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.ui-dashboard .sub {
+  color: #777;
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.equip-card {
+  border-radius: 10px;
+  padding: 20px;
+  background: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: 0.2s ease-in-out;
+}
+.equip-card:hover {
+  transform: translateY(-4px);
+}
+.equip-card .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.equip-card .score {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.equip-card.위험 {
+  border-left: 6px solid #e53935;
+  background: #ffebee;
+}
+.equip-card.주의 {
+  border-left: 6px solid #fbc02d;
+  background: #fffde7;
+}
+.equip-card.안전 {
+  border-left: 6px solid #43a047;
+  background: #e8f5e9;
+}
