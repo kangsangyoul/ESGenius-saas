@@ -1,0 +1,51 @@
+.polished-dashboard {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 30px;
+  background: #f3f6f9;
+}
+.polished-dashboard header {
+  margin-bottom: 25px;
+}
+.polished-dashboard .subtitle {
+  font-size: 14px;
+  color: #666;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.equip-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+.equip-box:hover {
+  transform: translateY(-5px);
+}
+.equip-box h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+.equip-box p {
+  margin: 6px 0;
+}
+.equip-box.위험 {
+  border-left: 6px solid #e53935;
+  background: #fff5f5;
+}
+.equip-box.주의 {
+  border-left: 6px solid #fbc02d;
+  background: #fffce0;
+}
+.equip-box.안전 {
+  border-left: 6px solid #43a047;
+  background: #f0fff0;
+}
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
